@@ -1,0 +1,295 @@
+{
+    "Version": "0.0.1",
+    "GlobalData": {
+        "About": [],
+        "Categories": {
+            "Analysis": [
+                {
+                    "name": "Daylight",
+                    "displayname": "Daylight (NEN-EN 17037)",
+                    "legend": {
+                        "headline": "Illumination values in considered area",
+                        "colors": [
+                            "#0065FF",
+                            "#00D1FF",
+                            "#00FFC1",
+                            "#00FF56",
+                            "#14FF00",
+                            "#7FFF00",
+                            "#EAFF00",
+                            "#FFA800",
+                            "#FF3D00"
+                        ],
+                        "values": [
+                            "0 lux",
+                            "100 lux",
+                            "200 lux",
+                            "300 lux",
+                            "400 lux",
+                            "500 lux",
+                            "600 lux",
+                            "700 lux",
+                            "800 lux"
+                        ]
+                    }
+                }
+            ]
+        },
+        "Thumbnails": {
+            "appendix": "_top.png",
+            "path": "Daylight/"
+        }
+    },
+    "Inputs": [
+        {
+            "Name": "roomHeight",
+            "DisplayName": "Room Height",
+            "Description": "Inner height of the room (in mm)",
+            "Category": "analysis",
+            "SubCategory": "",
+            "Association": "default",
+            "Type": "valuelist",
+            "Unit": "mm",
+            "Values": [
+                {
+                    "key": "2750",
+                    "value": "2750"
+                }
+            ]
+        },
+        {
+            "Name": "roomWidth",
+            "DisplayName": "Room Width",
+            "Description": "Inner width of the room (in mm)",
+            "Category": "analysis",
+            "SubCategory": "",
+            "Association": "default",
+            "Type": "valuelist",
+            "Unit": "mm",
+            "Values": [
+                {
+                    "key": "3000",
+                    "value": "3000"
+                },
+                {
+                    "key": "3350",
+                    "value": "3350"
+                },
+                {
+                    "key": "3700",
+                    "value": "3700"
+                }
+            ]
+        },
+        {
+            "Name": "roomDepth",
+            "DisplayName": "Room Depth",
+            "Description": "Inner depth of the room (in mm)",
+            "Category": "",
+            "SubCategory": "",
+            "Association": "default",
+            "Type": "valuelist",
+            "Unit": "mm",
+            "Values": [
+                {
+                    "key": "3000",
+                    "value": "3000"
+                },
+                {
+                    "key": "4000",
+                    "value": "4000"
+                },
+                {
+                    "key": "5000",
+                    "value": "5000"
+                },
+                {
+                    "key": "6000",
+                    "value": "6000"
+                },
+                {
+                    "key": "7000",
+                    "value": "7000"
+                },
+                {
+                    "key": "8000",
+                    "value": "8000"
+                },
+                {
+                    "key": "9000",
+                    "value": "9000"
+                },
+                {
+                    "key": "10000",
+                    "value": "10000"
+                },
+                {
+                    "key": "11000",
+                    "value": "11000"
+                },
+                {
+                    "key": "12000",
+                    "value": "12000"
+                }
+            ]
+        },
+        {
+            "Name": "winWidth",
+            "DisplayName": "Window Width",
+            "Description": "Width of the window in percentage of room width",
+            "Category": "Analysis",
+            "SubCategory": "",
+            "Association": "default",
+            "Type": "valuelist",
+            "Unit": "%",
+            "Values": [
+                {
+                    "key": "90%",
+                    "value": "90"
+                },
+                {
+                    "key": "80%",
+                    "value": "80"
+                },
+                {
+                    "key": "65%",
+                    "value": "65"
+                },
+                {
+                    "key": "50%",
+                    "value": "50"
+                }
+            ]
+        },
+        {
+            "Name": "winBottom",
+            "DisplayName": "Window Bottom Height",
+            "Description": "Absolute height of the bottom of window opening from the floor (in mm)",
+            "Category": "Analysis",
+            "SubCategory": "",
+            "Association": "default",
+            "Type": "valuelist",
+            "Unit": "mm",
+            "Values": [
+                {
+                    "key": "900",
+                    "value": "900"
+                },
+                {
+                    "key": "0",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "Name": "winTop",
+            "DisplayName": "Window Top Height",
+            "Description": "Absolute height of the top of the window opening from the ground (in mm)",
+            "Category": "Analysis",
+            "SubCategory": "",
+            "Association": "default",
+            "Type": "valuelist",
+            "Unit": "mm",
+            "Values": [
+                {
+                    "key": "2750",
+                    "value": "2750"
+                },
+                {
+                    "key": "2600",
+                    "value": "2600"
+                },
+                {
+                    "key": "2300",
+                    "value": "2300"
+                },
+                {
+                    "key": "2000",
+                    "value": "2000"
+                }
+            ]
+        },
+        {
+            "Name": "obstruct",
+            "DisplayName": "Obstruction depth",
+            "Description": "Depth of the external obstruction (in mm)",
+            "Category": "Analysis",
+            "SubCategory": "",
+            "Association": "default",
+            "Type": "valuelist",
+            "Unit": "mm",
+            "Values": [
+                {
+                    "key": "0",
+                    "value": "0"
+                },
+                {
+                    "key": "1000",
+                    "value": "1000"
+                },
+                {
+                    "key": "1330",
+                    "value": "1330"
+                },
+                {
+                    "key": "1670",
+                    "value": "1670"
+                },
+                {
+                    "key": "2000",
+                    "value": "2000"
+                }
+            ]
+        }
+    ],
+    "Outputs": [
+        {
+            "Name": "Norm",
+            "DisplayName": "Whole room can count as residable space?",
+            "Description": "If True, whole space fullfills the NE-NEN 17037 requirements and can count a residable space. If not, only part of the space has to be defined.",
+            "Category": "Analysis",
+            "IsKeyResult": true,
+            "Unit": ""
+        },
+        {
+            "Name": "100lux",
+            "DisplayName": "Area with >100 lux",
+            "Description": "Proportion of concerned area that fullfills the criteria",
+            "Category": "Analysis",
+            "IsKeyResult": true,
+            "Unit": "%"
+        },
+        {
+            "Name": "300lux",
+            "DisplayName": "Area with >300 lux",
+            "Description": "Proportion of concerned area that fullfills the criteria",
+            "Category": "Analysis",
+            "IsKeyResult": true,
+            "Unit": "%"
+        },
+        {
+            "Name": "TotalArea",
+            "DisplayName": "Total room area",
+            "Description": "Total room area",
+            "Category": "Analysis",
+            "IsKeyResult": false,
+            "Unit": "m2"
+        },
+        {
+            "Name": "WinWidth",
+            "DisplayName": "Window width",
+            "Description": "Window width",
+            "Category": "Analysis",
+            "IsKeyResult": false,
+            "Unit": "mm"
+        },
+        {
+            "Name": "WinHeight",
+            "DisplayName": "Window height",
+            "Description": "Window height",
+            "Category": "Analysis",
+            "IsKeyResult": false,
+            "Unit": "mm"
+        }
+    ]
+}

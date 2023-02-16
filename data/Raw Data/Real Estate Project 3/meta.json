@@ -1,0 +1,191 @@
+{
+    "GlobalData": {
+        "About": [
+            "Planfitter Showcase",
+            "OMRT"
+        ],
+        "Thumbnails": {
+            "path": "Floorplan/",
+            "appendix": "_floorplan.png"
+        },
+        "Categories": {
+            "Composition": [{
+                    "name": "Floorplan",
+                    "legend": {
+                        "headline": "Zones",
+                        "colors": [
+                            "#B1E3D6",
+                            "#485487"
+                        ],
+                        "values": [
+                            "Apartment",
+                            "Circulation"
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "Inputs": [{
+            "Name": "Type",
+            "DisplayName": "Building Type",
+            "Type": "valuelist",
+            "Category": "composition",
+            "SubCategory": "Floorplan",
+            "Unit": "",
+            "Values": [{
+                    "key": "Central coridor",
+                    "value": "Central"
+                },
+                {
+                    "key": "Gallery",
+                    "value": "Gallery"
+                }
+            ],
+            "Association": "default",
+            "Description": "Two different types of building and building circulation configuration."
+        },
+        {
+            "Name": "Length",
+            "DisplayName": "Building length",
+            "Type": "valuelist",
+            "Category": "composition",
+            "SubCategory": "Floorplan",
+            "Unit": "m",
+            "Values": [{
+                    "key": "20.0",
+                    "value": 200
+                },
+                {
+                    "key": "22.5",
+                    "value": 225
+                },
+                {
+                    "key": "25.0",
+                    "value": 250
+                },
+                {
+                    "key": "27.5",
+                    "value": 275
+                },
+                {
+                    "key": "30.0",
+                    "value": 300
+                }
+            ],
+            "Association": "default",
+            "Description": "Variable building footprint length."
+        },
+        {
+            "Name": "Width",
+            "DisplayName": "Apartment depth",
+            "Type": "valuelist",
+            "Category": "composition",
+            "SubCategory": "Floorplan",
+            "Unit": "m",
+            "Values": [{
+                    "key": "5.35",
+                    "value": 535
+                },
+                {
+                    "key": "5.85",
+                    "value": 585
+                },
+                {
+                    "key": "6.35",
+                    "value": 635
+                },
+                {
+                    "key": "6.85",
+                    "value": 685
+                },
+                {
+                    "key": "7.35",
+                    "value": 735
+                }
+            ],
+            "Association": "default",
+            "Description": "Variable apartment depth."
+        },
+        {
+            "Name": "Size",
+            "DisplayName": "Apartment size",
+            "Type": "valuelist",
+            "Category": "composition",
+            "SubCategory": "Floorplan",
+            "Unit": "m",
+            "Values": [{
+                    "key": "Studio",
+                    "value": "Studio"
+                },
+                {
+                    "key": "2 room",
+                    "value": "2room"
+                },
+                {
+                    "key": "3+ room",
+                    "value": "3room"
+                }
+            ],
+            "Association": "default",
+            "Description": "Prefered size of generated apartments."
+        },
+        {
+            "Name": "Layout",
+            "DisplayName": "Apartment layout",
+            "Type": "valuelist",
+            "Category": "composition",
+            "SubCategory": "Floorplan",
+            "Unit": "m",
+            "Values": [{
+                    "key": "A",
+                    "value": "A"
+                },
+                {
+                    "key": "B",
+                    "value": "B"
+                },
+                {
+                    "key": "C",
+                    "value": "C"
+                }
+            ],
+            "Association": "default",
+            "Description": "Select alternative apartment layouts"
+        }
+    ],
+    "Outputs": [{
+            "Name": "Efficiency",
+            "DisplayName": "Efficiency",
+            "Type": "Number",
+            "Category": "Composition",
+            "SubCategory": "Floorplan",
+            "IsKeyResult": true,
+            "Unit": "%",
+            "Association": "default",
+            "Description": "The percantage of floor space that can be sold."
+        },
+        {
+            "Name": "AptSize",
+            "DisplayName": "Average apartment size",
+            "Type": "Number",
+            "Category": "Composition",
+            "SubCategory": "Floorplan",
+            "IsKeyResult": false,
+            "Unit": "m2",
+            "Association": "default",
+            "Description": "Average Size of gross floor area residential per apartment"
+        },
+        {
+            "Name": "AptCount",
+            "DisplayName": "Apartment count",
+            "Type": "Number",
+            "Category": "Composition",
+            "SubCategory": "Floorplan",
+            "IsKeyResult": false,
+            "Unit": "per floor",
+            "Association": "default",
+            "Description": "Number of apartments per floor"
+        }
+    ]
+}
